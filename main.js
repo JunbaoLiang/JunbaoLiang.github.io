@@ -61,6 +61,13 @@
     revealTargets.forEach((el) => el.classList.add("is-in"));
   }
 
+  // ---- Hide broken project figures ---------------------------------------
+  // If a project image is missing, hide the <img> so the placeholder shows.
+  document.querySelectorAll(".card__figure img").forEach((img) => {
+    img.addEventListener("error", () => { img.style.display = "none"; });
+    if (img.complete && img.naturalWidth === 0) img.style.display = "none";
+  });
+
   // ---- Active section in nav ---------------------------------------------
   const navLinks = Array.from(document.querySelectorAll(".nav__links a"));
   const sectionMap = new Map();
