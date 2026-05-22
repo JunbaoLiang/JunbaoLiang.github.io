@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Junbao Liang — Computational Chemistry · Scientific ML</title>
+  <meta name="description" content="Junbao Liang — PhD candidate in Computational Chemistry at Virginia Tech. Scientific machine learning and molecular simulation for biophysics and drug discovery." />
+  <meta name="theme-color" content="#0a0b0d" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="frame" aria-hidden="true">
+    <span class="tick tl"></span><span class="tick tr"></span>
+    <span class="tick bl"></span><span class="tick br"></span>
+  </div>
+
+  <header class="nav" id="top">
+    <a class="nav__brand" href="#top" aria-label="Junbao Liang — home">
+      <svg class="nav__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="1.2" fill="none">
+          <circle cx="16" cy="16" r="2.5" fill="currentColor"/>
+          <ellipse cx="16" cy="16" rx="11" ry="4.5"/>
+          <ellipse cx="16" cy="16" rx="11" ry="4.5" transform="rotate(60 16 16)"/>
+          <ellipse cx="16" cy="16" rx="11" ry="4.5" transform="rotate(120 16 16)"/>
+        </g>
+      </svg>
+      <span class="nav__name">Junbao&nbsp;Liang</span>
+    </a>
+    <nav class="nav__links" aria-label="Section navigation">
+      <a href="#research" data-section="research"><span class="mono">01</span> Research</a>
+      <a href="#publications" data-section="publications"><span class="mono">02</span> Publications</a>
+      <a href="#education" data-section="education"><span class="mono">03</span> Education</a>
+      <a href="#contact" data-section="contact"><span class="mono">04</span> Contact</a>
+    </nav>
+    <div class="nav__util">
+      <a class="icon-link" href="https://github.com/JunbaoLiang" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.12-1.47-1.12-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.04 1.53 1.04.9 1.54 2.36 1.09 2.94.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.55 9.55 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+      </a>
+      <a class="icon-link" href="LINKEDIN_URL_HERE" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21h-4V9Z"/></svg>
+      </a>
+      <a class="icon-link" href="SCHOLAR_URL_HERE" target="_blank" rel="noopener" aria-label="Google Scholar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 1 9l11 7 9-5.73V17h2V9L12 2Zm0 12.4-7-4.45L12 5l7 4.95-7 4.45ZM5 13.18v3.32a7 7 0 0 0 14 0v-3.32l-7 4.45-7-4.45Z"/></svg>
+      </a>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 4V1m0 22v-3m8-8h3M1 12h3m13.66-6.66 2.12-2.12M3.22 20.78l2.12-2.12m0-13.32L3.22 3.22m17.56 17.56-2.12-2.12M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" fill="none"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="hero__meta mono">
+        <span>[ 38°N · 80°W ]</span>
+        <span>Blacksburg, VA</span>
+        <span class="hero__meta-dot">·</span>
+        <span>v2026.05</span>
+      </div>
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="kicker mono">— Computational Chemistry / Scientific ML</p>
+          <h1 id="hero-name" class="hero__name">
+            Junbao <em>Liang</em>
+          </h1>
+          <p class="hero__lede">
+            PhD candidate at Virginia Tech building scientific ML and molecular
+            simulation workflows for proteins, electrolytes, and the
+            hydration chemistry between them.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="assets/cv-ml.pdf" download>
+              <span class="mono">↓</span> CV · Scientific ML
+            </a>
+            <a class="btn btn--ghost" href="assets/cv-mm.pdf" download>
+              <span class="mono">↓</span> CV · Molecular Modeling
+            </a>
+          </div>
+          <dl class="hero__stats mono">
+            <div><dt>Track</dt><dd>PhD · Chemistry</dd></div>
+            <div><dt>Advisor</dt><dd>V. Welborn</dd></div>
+            <div><dt>Pub.</dt><dd>Protein Science '25</dd></div>
+            <div><dt>Best F1</dt><dd>0.92 / pocket</dd></div>
+          </dl>
+        </div>
+        <figure class="hero__portrait">
+          <div class="hero__portrait-frame">
+            <img src="assets/Junbao_image.PNG" alt="Portrait placeholder for Junbao Liang" width="400" height="500" />
+            <span class="mono hero__portrait-label">DATA · 01 / 04</span>
+          </div>
+          <figcaption class="mono">
+            <span>FIG. 01</span>
+            <span>Investigator portrait</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="band" id="about" aria-label="About">
+      <p class="band__lede">
+        I work at the intersection of <em>molecular dynamics</em> and
+        <em>machine learning</em> — running AMOEBA/CHARMM simulations to
+        generate molecular-scale signals, then engineering features that turn
+        those signals into predictive models. My research spans enzyme
+        engineering, peptide hydration, and battery electrolytes; I'm now
+        looking for <strong>Scientific ML / Applied Scientist</strong> or
+        <strong>Molecular Modeling Scientist</strong> roles in biophysics and
+        drug discovery.
+      </p>
+      <ul class="skills" aria-label="Technical skills">
+        <li class="skill">
+          <span class="skill__label mono">A · Programming</span>
+          <span class="skill__items">Python · Bash · Git</span>
+        </li>
+        <li class="skill">
+          <span class="skill__label mono">B · Machine Learning</span>
+          <span class="skill__items">XGBoost · SVM · scikit-learn · feature engineering</span>
+        </li>
+        <li class="skill">
+          <span class="skill__label mono">C · Molecular Simulation</span>
+          <span class="skill__items">AMOEBA · CHARMM · Tinker · GROMACS · MDAnalysis</span>
+        </li>
+        <li class="skill">
+          <span class="skill__label mono">D · Quantum Chemistry</span>
+          <span class="skill__items">VASP · Gaussian</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="research" id="research" aria-labelledby="research-title">
+      <header class="section-head">
+        <span class="section-head__num mono">[ 01 / RESEARCH ]</span>
+        <h2 id="research-title">Selected projects</h2>
+        <p class="section-head__sub">Four threads that share a method — generate molecular-scale signals, then make them legible.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card" data-tone="ml">
+          <header class="card__head">
+            <span class="card__num mono">01</span>
+            <span class="card__status mono">F1 · 0.92</span>
+          </header>
+          <h3 class="card__title">Binding-pocket prediction from protein structure</h3>
+          <p class="card__lede">A grid-based pocket detector and XGBoost classifier built on geometric and pharmacophore features of local neighborhoods.</p>
+          <ul class="card__bullets">
+            <li>Labeled pocket grid points from known ligand coordinates (≤ 4 Å) and trained on held-out chains.</li>
+            <li>Scaled inference with <code>cKDTree</code> spatial indexing and batched 3D grids.</li>
+            <li>Exported probability-scored pocket points as PDB for visualization in PyMOL.</li>
+          </ul>
+          <footer class="card__foot mono">
+            <span>XGBoost</span><span>scikit-learn</span><span>cKDTree</span><span>PDB</span>
+          </footer>
+        </article>
+
+        <article class="card" data-tone="mm">
+          <header class="card__head">
+            <span class="card__num mono">02</span>
+            <span class="card__status mono">Protein Sci · 2025</span>
+          </header>
+          <h3 class="card__title">Glycosylated DszB — reducing product inhibition</h3>
+          <p class="card__lede">Artificial β-glucose decoration of a desulfinase enzyme to disrupt the product-trapping loop dynamics that throttle catalysis.</p>
+          <ul class="card__bullets">
+            <li>AMOEBA MD on glycosylated and apo variants; characterized loop dynamics with RMSD / RMSF.</li>
+            <li>Ramachandran analysis connected glycation sites to reduced product trapping.</li>
+            <li>Published in <em>Protein Science</em>; co-first contributions on simulation and analysis.</li>
+          </ul>
+          <footer class="card__foot mono">
+            <span>AMOEBA</span><span>Tinker</span><span>MDAnalysis</span><span>Enzyme&nbsp;Eng.</span>
+          </footer>
+        </article>
+
+        <article class="card" data-tone="mm">
+          <header class="card__head">
+            <span class="card__num mono">03</span>
+            <span class="card__status mono">Manuscript · in prep</span>
+          </header>
+          <h3 class="card__title">Sodium-ion electrolyte selection in diglyme</h3>
+          <p class="card__lede">Polarizable and fixed-charge MD across NaPF₆ and NaOTF in diglyme to rationalize experimental transport trends.</p>
+          <ul class="card__bullets">
+            <li>Simulated 0.6 M / 1 M NaPF₆ and 1 M NaOTF with AMOEBA and CHARMM.</li>
+            <li>Quantified diffusion, RDF, and solvation structure to compare salts.</li>
+            <li>Guided collaborator electrolyte choice for sodium battery prototypes.</li>
+          </ul>
+          <footer class="card__foot mono">
+            <span>AMOEBA</span><span>CHARMM</span><span>GROMACS</span><span>RDF&nbsp;/&nbsp;MSD</span>
+          </footer>
+        </article>
+
+        <article class="card" data-tone="ml">
+          <header class="card__head">
+            <span class="card__num mono">04</span>
+            <span class="card__status mono">Active · 2025–</span>
+          </header>
+          <h3 class="card__title">Peptide hydration dynamics across glucose gradients</h3>
+          <p class="card__lede">A benchmark dataset of solvated pentamers and sequence mixtures spanning 0–2 M glucose to quantify composition-dependent hydration shifts.</p>
+          <ul class="card__bullets">
+            <li>VACF fits for diffusion and retardation; H-bond statistics; RDF, R<sub>g</sub>, SASA.</li>
+            <li>Connects sequence composition to glucose-induced dynamical slowdown.</li>
+            <li>Designed to feed downstream ML models on biomolecular hydration.</li>
+          </ul>
+          <footer class="card__foot mono">
+            <span>MDAnalysis</span><span>VACF</span><span>SASA</span><span>Benchmark</span>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="publications" id="publications" aria-labelledby="pub-title">
+      <header class="section-head">
+        <span class="section-head__num mono">[ 02 / PUBLICATIONS ]</span>
+        <h2 id="pub-title">Publications</h2>
+        <p class="section-head__sub">Peer-reviewed work. First-author entries are emphasized.</p>
+      </header>
+
+      <ol class="pub-list">
+        <li class="pub">
+          <span class="pub__year mono">2025</span>
+          <div class="pub__body">
+            <h3 class="pub__title"><strong>Liang, J.</strong>, Zheng, Y., &amp; Vaissier Welborn, V. <em>Mitigating product inhibition in 2′-hydroxybiphenyl-2-sulfinate desulfinase (DszB) with synthetic glycosylation.</em></h3>
+            <p class="pub__meta mono"><span>Protein Science</span> · <span>2025</span> · <a href="DOI_HERE" target="_blank" rel="noopener">doi ↗</a></p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="education" id="education" aria-labelledby="edu-title">
+      <header class="section-head">
+        <span class="section-head__num mono">[ 03 / EDUCATION ]</span>
+        <h2 id="edu-title">Education</h2>
+      </header>
+
+      <ol class="timeline">
+        <li class="timeline__item">
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <span class="timeline__when mono">2022 — Present</span>
+          <div class="timeline__body">
+            <h3>Ph.D. in Chemistry · Virginia Tech</h3>
+            <p>Computational chemistry with Prof. Valerie Welborn. GPA 3.85.</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <span class="timeline__when mono">2019 — 2020</span>
+          <div class="timeline__body">
+            <h3>M.S. in Chemistry · University of Oregon</h3>
+            <p>Graduate coursework in physical and computational chemistry.</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <span class="timeline__when mono">2015 — 2019</span>
+          <div class="timeline__body">
+            <h3>B.S. in Applied Chemistry · China University of Mining and Technology</h3>
+            <p>GPA 3.67.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <header class="section-head">
+        <span class="section-head__num mono">[ 04 / CONTACT ]</span>
+        <h2 id="contact-title">Get in touch</h2>
+        <p class="section-head__sub">Email is the fastest way to reach me — I read everything within a day.</p>
+      </header>
+      <div class="contact__grid">
+        <a class="contact__card" href="mailto:junbaol@vt.edu">
+          <span class="mono">— Email</span>
+          <span class="contact__big">junbaol@vt.edu</span>
+        </a>
+        <a class="contact__card" href="https://github.com/JunbaoLiang" target="_blank" rel="noopener">
+          <span class="mono">— GitHub</span>
+          <span class="contact__big">JunbaoLiang</span>
+        </a>
+        <a class="contact__card" href="LINKEDIN_URL_HERE" target="_blank" rel="noopener">
+          <span class="mono">— LinkedIn</span>
+          <span class="contact__big">/in/junbaoliang</span>
+        </a>
+        <a class="contact__card" href="SCHOLAR_URL_HERE" target="_blank" rel="noopener">
+          <span class="mono">— Scholar</span>
+          <span class="contact__big">Publications ↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__row">
+      <span class="mono">© 2026 Junbao Liang</span>
+      <span class="mono foot__sig">— end of transmission · vt / chem</span>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
