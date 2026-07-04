@@ -34,7 +34,7 @@
         <div class="hero__main">
           <p class="eyebrow">Computational Chemistry · Virginia Tech</p>
           <h1 class="hero__title">Turning molecular<br>simulations into<br><em>predictive models.</em></h1>
-          <p class="hero__intro">I work at the intersection of molecular dynamics and machine learning — running AMOEBA &amp; CHARMM simulations to generate molecular-scale signals, then engineering the features that turn them into models for biophysics and drug discovery.</p>
+          <p class="hero__intro">I combine molecular dynamics simulation with machine learning — using state-of-the-art force fields to capture the physicochemical properties of molecules, then turning that data into predictive models for biophysics and drug discovery.</p>
           <div class="hero__cta">
             <a class="btn btn--primary" href="assets/cv-ml.pdf" target="_blank" rel="noopener">Download CV · Scientific ML</a>
             <a class="btn btn--ghost" href="assets/cv-mm.pdf" target="_blank" rel="noopener">CV · Molecular Modeling</a>
@@ -58,8 +58,8 @@
         <h2 class="section__label">About</h2>
         <div class="section__body about">
           <p class="lead">I'm a Ph.D. candidate in Computational Chemistry at Virginia Tech, advised by Valerie Welborn.</p>
-          <p class="prose">My research generates molecular-scale signals from physics-based simulation and translates them into interpretable, predictive features. I care about the full path — from force-field dynamics to the model that a team can actually act on — and about doing it rigorously enough to trust the result.</p>
-          <p class="prose">Recently that's meant an XGBoost binding-pocket predictor reaching <strong>F1 ≈ 0.92</strong>, a published <em>Protein Science</em> study on enzyme glycosylation, and benchmark datasets for peptide hydration dynamics — work that bridges rigorous simulation and applied machine learning for drug discovery.</p>
+          <p class="prose">My research follows the full path from physics-driven simulation to predictive model. I care about every step of that path, from the atomistic details only accurate simulation can reveal, to the models that speed up work like virtual high-throughput screening. And I evaluate each step rigorously, so the results can be used with confidence.</p>
+          <p class="prose">Recently that's spanned two fronts. In biophysics, I used XGBoost to build a binding-pocket predictor reaching <strong>F1 ≈ 0.92</strong> and published a <em>Protein Science</em> study on enzyme glycosylation. In energy materials, I have a submitted manuscript on ion transport in sodium-ion battery electrolytes, and a second project where I'm parametrizing a high-accuracy force field these systems have lacked, then using molecular dynamics to predict their experimental SAXS curves. Both rest on the same foundation: accurate molecular simulation, with machine learning where it sharpens the prediction.</p>
         </div>
       </section>
 
@@ -70,8 +70,8 @@
           <li class="focus__item">
             <span class="focus__num">01</span>
             <div>
-              <h3 class="focus__title">Molecular dynamics simulation</h3>
-              <p class="focus__desc">AMOEBA &amp; CHARMM force fields to probe biomolecular systems and surface the physics behind function.</p>
+              <h3 class="focus__title">Molecular dynamics &amp; force fields</h3>
+              <p class="focus__desc">Building and applying accurate force fields (AMOEBA, CHARMM) to resolve how molecular systems behave, from proteins to battery electrolytes, and the physics behind it.</p>
             </div>
           </li>
           <li class="focus__item">
@@ -84,8 +84,8 @@
           <li class="focus__item">
             <span class="focus__num">03</span>
             <div>
-              <h3 class="focus__title">Biophysics &amp; drug discovery</h3>
-              <p class="focus__desc">Applying these models to enzyme engineering, catalysis, and protein function for real therapeutic questions.</p>
+              <h3 class="focus__title">Biophysics &amp; energy materials</h3>
+              <p class="focus__desc">Applying these tools to enzyme engineering, protein function, and battery-electrolyte design, spanning drug discovery and energy storage.</p>
             </div>
           </li>
         </ol>
@@ -101,12 +101,26 @@
               <h3 class="project__title">Binding-pocket prediction from protein structure</h3>
               <span class="project__meta">2024</span>
             </div>
-            <p class="project__desc">A grid-based pocket-detection pipeline with an XGBoost classifier trained on geometric and pharmacophore features from local protein neighborhoods — <strong>F1 ≈ 0.92</strong> on held-out data. Scaled inference with cKDTree spatial indexing and exported probability-scored pockets as PDB for visualization.</p>
+            <p class="project__desc">Pocket prediction is the first step of structure-based virtual screening: it tells docking where to look, narrowing a large compound library before wet-lab testing. Built a grid-based pocket-detection pipeline with an XGBoost classifier trained on geometric and pharmacophore features from local protein neighborhoods, reaching <strong>F1 ≈ 0.92</strong> on held-out data. Scaled inference with cKDTree spatial indexing and exported probability-scored pockets as PDB for visualization.</p>
             <ul class="tags">
               <li>XGBoost</li>
               <li>Feature engineering</li>
               <li>cKDTree</li>
               <li>scikit-learn</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div class="project__head">
+              <h3 class="project__title">Electrostatic Preorganization and Mg²⁺ Positioning in β-Phosphoglucomutase</h3>
+              <span class="project__meta">2026 · submitted</span>
+            </div>
+            <p class="project__desc">Mapped the active-site electrostatics of wild-type β-PGM and its Asp10Asn mutant with AMOEBA polarizable MD and projected electric-field analysis. Decomposing the field by residue, ion, and solvent revealed that catalysis is governed less by Asp10 proton transfer than by <strong>Mg²⁺ positioning</strong>: in the mutant, a mispositioned Mg²⁺ opposes phosphoryl transfer, revising the accepted mechanism. First-author manuscript, <strong>submitted 2026</strong>.</p>
+            <ul class="tags">
+              <li>AMOEBA MD</li>
+              <li>Electric fields</li>
+              <li>Poltype2</li>
+              <li>Tinker</li>
             </ul>
           </article>
 
@@ -125,23 +139,10 @@
 
           <article class="project">
             <div class="project__head">
-              <h3 class="project__title">Peptide hydration-water dynamics in glucose solution</h3>
-              <span class="project__meta">2025 · ongoing</span>
-            </div>
-            <p class="project__desc">Built a benchmark dataset of solvated amino-acid pentamers across 0–2 M glucose to quantify composition-dependent hydration. Computed VACF-based diffusion, H-bond statistics, RDF, radius of gyration, and SASA to characterize glucose-induced dynamical shifts.</p>
-            <ul class="tags">
-              <li>CHARMM</li>
-              <li>MDAnalysis</li>
-              <li>VACF · SASA</li>
-            </ul>
-          </article>
-
-          <article class="project">
-            <div class="project__head">
               <h3 class="project__title">Electrolyte selection for sodium-ion batteries</h3>
-              <span class="project__meta">2024 · in prep</span>
+              <span class="project__meta">2026 · submitted</span>
             </div>
-            <p class="project__desc">Simulated sodium-ion electrolytes in diglyme (NaPF₆, NaOTF) with AMOEBA and CHARMM, quantifying ion transport and solvation structure via RDF and diffusion to rationalize experimental trends and guide electrolyte choice. Manuscript in preparation.</p>
+            <p class="project__desc">Sodium-ion batteries are a cheaper, more abundant alternative to lithium, and their performance hinges on the electrolyte. Simulated sodium-ion electrolytes in diglyme (NaPF₆, NaOTF) with AMOEBA and CHARMM, quantifying ion transport and solvation structure via RDF and diffusion to rationalize experimental trends and guide electrolyte choice. Manuscript submitted.</p>
             <ul class="tags">
               <li>AMOEBA / CHARMM</li>
               <li>GROMACS</li>
@@ -214,9 +215,19 @@
 
           <p class="pub__subhead">Manuscripts in progress</p>
           <div class="pub__wip">
-            <span class="chip chip--prep">In preparation</span>
-            <h4 class="pub__wip-title">Electrolyte selection for sodium-ion batteries via AMOEBA &amp; CHARMM molecular dynamics</h4>
-            <p class="pub__wip-authors">Liang, J., et&nbsp;al. — manuscript in preparation, 2025.</p>
+            <span class="chip chip--submitted">Submitted</span>
+            <h4 class="pub__wip-title">Electrostatic Preorganization and Mg²⁺ Positioning in β-Phosphoglucomutase</h4>
+            <p class="pub__wip-authors">Liang, J., Hartman, N., Camp, G., &amp; Vaissier Welborn, V. — manuscript submitted, 2026.</p>
+          </div>
+          <div class="pub__wip">
+            <span class="chip chip--submitted">Submitted</span>
+            <h4 class="pub__wip-title">Low-Salt Ether Electrolyte Enables Fast-Charging High-Voltage Sodium Batteries through Synergistic Interfacial Kinetic Stabilization</h4>
+            <p class="pub__wip-authors">Xia, D., Liang, J., et&nbsp;al. — manuscript submitted, 2026.</p>
+          </div>
+          <div class="pub__wip">
+            <span class="chip chip--submitted">Submitted</span>
+            <h4 class="pub__wip-title">Investigation on the Effect of Solvent Interactions on Molecular Weight and Polymerization of Phenolphthalin-Based Poly(arylene ether sulfone) Homopolymers</h4>
+            <p class="pub__wip-authors">Arnett, N., Mason, S., Liang, J., Vaissier Welborn, V., Downes, R., Wadsworth, O., &amp; Addison, B. — manuscript submitted, 2026.</p>
           </div>
         </div>
       </section>

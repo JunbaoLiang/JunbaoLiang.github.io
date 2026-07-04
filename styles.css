@@ -471,6 +471,7 @@ img { display: block; max-width: 100%; }
   margin-bottom: 8px;
 }
 .chip--prep { color: var(--prep-tx); background: var(--prep-bg); }
+.chip--submitted { color: var(--accent); background: #f1e3d7; }
 .pub__wip-title {
   font-family: var(--serif);
   font-weight: 400;
