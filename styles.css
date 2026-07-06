@@ -130,10 +130,10 @@ img { display: block; max-width: 100%; }
 }
 
 .hero__intro {
-  font-size: 18px;
-  line-height: 1.65;
+  font-size: 20px;
+  line-height: 1.6;
   color: var(--ink-soft);
-  max-width: 520px;
+  max-width: 580px;
   margin: 0 0 34px;
 }
 
@@ -213,7 +213,7 @@ img { display: block; max-width: 100%; }
 }
 
 .banner__text {
-  font-size: 15px;
+  font-size: 17px;
   color: #4a443c;
   line-height: 1.5;
 }
@@ -224,22 +224,22 @@ img { display: block; max-width: 100%; }
    ------------------------------------------------------------------------- */
 .section {
   display: flex;
-  gap: 64px;
-  padding: 80px var(--pad-x);
+  gap: 48px;
+  padding: 56px var(--pad-x);
   border-top: 1px solid var(--line-1);
   scroll-margin-top: 80px;
 }
 
-#about { margin-top: 72px; }
+#about { margin-top: 48px; }
 
 .section__label {
   flex: none;
   width: 200px;
   margin: 0;
   font-family: var(--mono);
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.14em;
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--accent);
 }
@@ -247,16 +247,16 @@ img { display: block; max-width: 100%; }
 .section__body { flex: 1; min-width: 0; }
 
 /* About */
-.about { max-width: 640px; }
+.about { max-width: 720px; }
 .lead {
   font-family: var(--serif);
-  font-size: 29px;
+  font-size: 31px;
   line-height: 1.4;
   margin: 0 0 24px;
   color: var(--ink);
 }
 .prose {
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.7;
   color: var(--ink-soft);
   margin: 0 0 20px;
@@ -294,11 +294,11 @@ img { display: block; max-width: 100%; }
   margin: 0 0 8px;
 }
 .focus__desc {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.65;
   color: var(--ink-soft);
   margin: 0;
-  max-width: 560px;
+  max-width: 620px;
 }
 
 /* Selected work */
@@ -323,7 +323,7 @@ img { display: block; max-width: 100%; }
   font-size: 26px;
   line-height: 1.25;
   margin: 0;
-  max-width: 560px;
+  max-width: 620px;
 }
 .project__meta {
   font-family: var(--mono);
@@ -333,11 +333,11 @@ img { display: block; max-width: 100%; }
   white-space: nowrap;
 }
 .project__desc {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.6;
   color: var(--ink-soft);
   margin: 10px 0 14px;
-  max-width: 560px;
+  max-width: 620px;
 }
 .project__desc strong { color: var(--ink); font-weight: 600; }
 
@@ -363,7 +363,7 @@ img { display: block; max-width: 100%; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 36px 48px;
-  max-width: 660px;
+  max-width: 720px;
 }
 .skill__label {
   font-family: var(--mono);
@@ -375,7 +375,7 @@ img { display: block; max-width: 100%; }
   margin: 0 0 12px;
 }
 .skill__list {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
   color: var(--ink-soft);
   margin: 0;
@@ -385,7 +385,7 @@ img { display: block; max-width: 100%; }
 .education {
   display: flex;
   flex-direction: column;
-  max-width: 640px;
+  max-width: 720px;
 }
 .edu {
   display: flex;
@@ -405,7 +405,7 @@ img { display: block; max-width: 100%; }
   margin: 0;
 }
 .edu__detail {
-  font-size: 15px;
+  font-size: 17px;
   color: var(--ink-soft);
   margin: 4px 0 0;
 }
@@ -418,7 +418,7 @@ img { display: block; max-width: 100%; }
 }
 
 /* Publications */
-.publications { max-width: 640px; }
+.publications { max-width: 720px; }
 .pub__venue {
   font-family: var(--mono);
   font-size: 11px;

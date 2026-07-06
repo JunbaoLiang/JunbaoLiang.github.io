@@ -50,7 +50,7 @@
       <!-- open-to banner -->
       <aside class="banner">
         <span class="banner__dot" aria-hidden="true"></span>
-        <span class="banner__text"><strong>Open to roles</strong> — Scientific ML / Applied Scientist &amp; Molecular Modeling Scientist positions in biophysics and drug discovery.</span>
+        <span class="banner__text"><strong>Open to roles</strong> — Scientific ML / Applied Scientist, Molecular Modeling Scientist &amp; Battery / Electrolyte Modeling Scientist positions in biophysics, drug discovery, and energy storage.</span>
       </aside>
 
       <!-- about -->
@@ -59,7 +59,7 @@
         <div class="section__body about">
           <p class="lead">I'm a Ph.D. candidate in Computational Chemistry at Virginia Tech, advised by Valerie Welborn.</p>
           <p class="prose">My research follows the full path from physics-driven simulation to predictive model. I care about every step of that path, from the atomistic details only accurate simulation can reveal, to the models that speed up work like virtual high-throughput screening. And I evaluate each step rigorously, so the results can be used with confidence.</p>
-          <p class="prose">Recently that's spanned two fronts. In biophysics, I used XGBoost to build a binding-pocket predictor reaching <strong>F1 ≈ 0.92</strong> and published a <em>Protein Science</em> study on enzyme glycosylation. In energy materials, I have a submitted manuscript on ion transport in sodium-ion battery electrolytes, and a second project where I'm parametrizing a high-accuracy force field these systems have lacked, then using molecular dynamics to predict their experimental SAXS curves. Both rest on the same foundation: accurate molecular simulation, with machine learning where it sharpens the prediction.</p>
+          <p class="prose">Recently that's spanned two fronts. In biophysics, I used XGBoost to build a binding-pocket predictor reaching F1 ≈ 0.92 and published a <em>Protein Science</em> study on enzyme glycosylation. In energy materials, I have a submitted manuscript on ion transport in sodium-ion battery electrolytes, and a second project where I'm parametrizing a high-accuracy force field these systems have lacked, then using molecular dynamics to predict their experimental SAXS curves. Both rest on the same foundation: accurate molecular simulation, with machine learning where it sharpens the prediction.</p>
         </div>
       </section>
 
@@ -101,7 +101,7 @@
               <h3 class="project__title">Binding-pocket prediction from protein structure</h3>
               <span class="project__meta">2024</span>
             </div>
-            <p class="project__desc">Pocket prediction is the first step of structure-based virtual screening: it tells docking where to look, narrowing a large compound library before wet-lab testing. Built a grid-based pocket-detection pipeline with an XGBoost classifier trained on geometric and pharmacophore features from local protein neighborhoods, reaching <strong>F1 ≈ 0.92</strong> on held-out data. Scaled inference with cKDTree spatial indexing and exported probability-scored pockets as PDB for visualization.</p>
+            <p class="project__desc">Pocket prediction is the first step of structure-based virtual screening: it tells docking where to look, narrowing a large compound library before wet-lab testing. Built a grid-based pocket-detection pipeline with an XGBoost classifier trained on geometric and pharmacophore features from local protein neighborhoods, reaching F1 ≈ 0.92 on held-out data. Scaled inference with cKDTree spatial indexing and exported probability-scored pockets as PDB for visualization.</p>
             <ul class="tags">
               <li>XGBoost</li>
               <li>Feature engineering</li>
@@ -126,19 +126,6 @@
 
           <article class="project">
             <div class="project__head">
-              <h3 class="project__title">Glycosylated enzyme to reduce product inhibition in DszB</h3>
-              <span class="project__meta">2025 · published</span>
-            </div>
-            <p class="project__desc">Artificially glycosylated DszB with β-glucose and predicted loop-dynamics changes with AMOEBA MD. Connected glycation to reduced product trapping through RMSD/RMSF and Ramachandran analysis. <strong>Published in <em>Protein Science</em>.</strong></p>
-            <ul class="tags">
-              <li>AMOEBA MD</li>
-              <li>RMSD / RMSF</li>
-              <li>Tinker</li>
-            </ul>
-          </article>
-
-          <article class="project">
-            <div class="project__head">
               <h3 class="project__title">Electrolyte selection for sodium-ion batteries</h3>
               <span class="project__meta">2026 · submitted</span>
             </div>
@@ -147,6 +134,20 @@
               <li>AMOEBA / CHARMM</li>
               <li>GROMACS</li>
               <li>RDF · diffusion</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div class="project__head">
+              <h3 class="project__title">Predicting SAXS to probe electrolyte solvation and transport</h3>
+              <span class="project__meta">2026 · ongoing</span>
+            </div>
+            <p class="project__desc">An unexpected peak appears in the experimental SAXS of certain electrolyte solutions, and its origin is still unclear. Parametrizing high-accuracy force fields for organic solvents and fluorinated sulfonylimide anions (FSI, TFSI, BETI) with Na⁺ and Cl⁻. MD then predicts the SAXS to reproduce that peak. That links it to the solvation structure and ion transport at the atomistic scale.</p>
+            <ul class="tags">
+              <li>MD</li>
+              <li>SAXS</li>
+              <li>Solvation structure</li>
+              <li>Ion transport</li>
             </ul>
           </article>
 
