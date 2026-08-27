@@ -3,9 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Junbao Liang — Computational Chemistry · Scientific ML</title>
-  <meta name="description" content="Junbao Liang — Ph.D. candidate in Computational Chemistry at Virginia Tech. Scientific machine learning and molecular simulation for biophysics and drug discovery." />
+  <title>Junbao Liang | Molecular Modeling &amp; Computational Chemistry</title>
+  <meta name="description" content="Junbao Liang is a computational chemistry Ph.D. candidate specializing in molecular dynamics, force-field parameterization, and automated trajectory analysis." />
   <meta name="theme-color" content="#f4efe7" />
+  <meta property="og:title" content="Junbao Liang | Molecular Modeling &amp; Computational Chemistry" />
+  <meta property="og:description" content="Polarizable molecular dynamics and scientific computing for enzymes, hydration, and electrolyte systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://junbaoliang.github.io/" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,29 +36,50 @@
       <!-- hero -->
       <section class="hero">
         <div class="hero__main">
-          <p class="eyebrow">Computational Chemistry · Virginia Tech</p>
-          <h1 class="hero__title">Turning molecular<br>simulations into<br><em>predictive models.</em></h1>
-          <p class="hero__intro">I combine molecular dynamics simulation with machine learning — using state-of-the-art force fields to capture the physicochemical properties of molecules, then turning that data into predictive models for biophysics and drug discovery.</p>
+          <p class="eyebrow">Polarizable MD · Molecular Modeling · Scientific Computing</p>
+          <h1 class="hero__title">Resolving molecular<br>mechanisms with<br><em>atomistic simulation.</em></h1>
+          <p class="hero__intro">I am a computational chemistry Ph.D. candidate at Virginia Tech, specializing in polarizable molecular dynamics, force-field parameterization, and automated trajectory analysis for enzymes, hydration, and electrolyte systems.</p>
           <div class="hero__cta">
-            <a class="btn btn--primary" href="assets/cv-ml.pdf" target="_blank" rel="noopener">Download CV · Scientific ML</a>
-            <a class="btn btn--ghost" href="assets/cv-mm.pdf" target="_blank" rel="noopener">CV · Molecular Modeling</a>
-            <a class="btn btn--ghost" href="/cdn-cgi/l/email-protection#59332c373b383635192f2d773c3d2c">Email</a>
+            <a class="btn btn--primary" href="#work">View selected research</a>
+            <a class="btn btn--ghost" href="assets/Junbao_Liang_CV_MM2026.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn btn--text" href="mailto:junbaol@vt.edu">Email me →</a>
           </div>
+          <p class="hero__meta">Ph.D. candidate · Expected May 2027 · Open to relocation nationwide</p>
         </div>
         <figure class="hero__portrait">
-          <img src="assets/Junbao_image.PNG" alt="Junbao Liang" width="296" height="360" />
+          <img src="assets/Junbao_image.PNG" alt="Portrait of Junbao Liang" width="220" height="248" />
           <figcaption>Ph.D. candidate · Welborn Lab<br>Blacksburg, VA</figcaption>
         </figure>
+      </section>
+
+      <!-- selected impact -->
+      <section class="metrics" aria-label="Selected research impact">
+        <div class="metrics__item">
+          <strong>165</strong>
+          <span>MD simulations across selected projects</span>
+        </div>
+        <div class="metrics__item">
+          <strong>19+ μs</strong>
+          <span>Aggregate simulation time</span>
+        </div>
+        <div class="metrics__item">
+          <strong>120</strong>
+          <span>Peptide hydration systems</span>
+        </div>
+        <div class="metrics__item">
+          <strong>4 years</strong>
+          <span>Linux and HPC experience</span>
+        </div>
       </section>
 
       <!-- open-to banner -->
       <aside class="banner">
         <span class="banner__dot" aria-hidden="true"></span>
         <div class="banner__body">
-          <p class="banner__lead"><strong>Open to roles</strong> in biophysics, drug discovery &amp; energy storage</p>
+          <p class="banner__lead"><strong>Open to opportunities</strong> where molecular simulation can clarify mechanism and guide design.</p>
           <ul class="banner__roles">
-            <li>Scientific ML / Applied Scientist</li>
             <li>Molecular Modeling Scientist</li>
+            <li>Computational Chemistry Scientist</li>
             <li>Battery / Electrolyte Modeling Scientist</li>
           </ul>
         </div>
@@ -64,35 +89,41 @@
       <section class="section" id="about">
         <h2 class="section__label">About</h2>
         <div class="section__body about">
-          <p class="lead">I'm a Ph.D. candidate in Computational Chemistry at Virginia Tech, advised by Valerie Welborn.</p>
-          <p class="prose">My research follows the full path from physics-driven simulation to predictive model. I care about every step of that path, from the atomistic details only accurate simulation can reveal, to the models that speed up work like virtual high-throughput screening. And I evaluate each step rigorously, so the results can be used with confidence.</p>
-          <p class="prose">Recently that's spanned two fronts. In biophysics, I used XGBoost to build a binding-pocket predictor reaching F1 ≈ 0.92 and published a <em>Protein Science</em> study on enzyme glycosylation. In energy materials, I have a submitted manuscript on ion transport in sodium-ion battery electrolytes, and a second project where I'm parametrizing a high-accuracy force field these systems have lacked, then using molecular dynamics to predict their experimental SAXS curves. Both rest on the same foundation: accurate molecular simulation, with machine learning where it sharpens the prediction.</p>
+          <p class="lead">I use accurate molecular simulation to turn complex trajectories into clear, testable physical insight.</p>
+          <p class="prose">My work spans enzyme catalysis, glycoengineering, peptide hydration, and battery electrolytes. Across these systems, I build force-field parameters, automate simulation campaigns on HPC resources, and develop Python analyses that connect atomistic behavior to experimentally relevant mechanisms.</p>
         </div>
       </section>
 
       <!-- research focus -->
       <section class="section" id="research">
         <h2 class="section__label">Research focus</h2>
-        <ol class="section__body focus">
+        <ol class="section__body focus focus--grid">
           <li class="focus__item">
             <span class="focus__num">01</span>
             <div>
-              <h3 class="focus__title">Molecular dynamics &amp; force fields</h3>
-              <p class="focus__desc">Building and applying accurate force fields (AMOEBA, CHARMM) to resolve how molecular systems behave, from proteins to battery electrolytes, and the physics behind it.</p>
+              <h3 class="focus__title">Molecular simulation</h3>
+              <p class="focus__desc">Polarizable and nonpolarizable MD with AMOEBA, CHARMM, Tinker9, and GROMACS.</p>
             </div>
           </li>
           <li class="focus__item">
             <span class="focus__num">02</span>
             <div>
-              <h3 class="focus__title">ML feature engineering</h3>
-              <p class="focus__desc">Turning high-dimensional trajectory data into compact, interpretable descriptors that power predictive models.</p>
+              <h3 class="focus__title">Force-field parameterization</h3>
+              <p class="focus__desc">Poltype2-based parameterization for ligands, glycosylated residues, and electrolyte components.</p>
             </div>
           </li>
           <li class="focus__item">
             <span class="focus__num">03</span>
             <div>
-              <h3 class="focus__title">Biophysics &amp; energy materials</h3>
-              <p class="focus__desc">Applying these tools to enzyme engineering, protein function, and battery-electrolyte design, spanning drug discovery and energy storage.</p>
+              <h3 class="focus__title">Trajectory analysis</h3>
+              <p class="focus__desc">Structural, solvation, electric-field, clustering, and time-correlation analyses.</p>
+            </div>
+          </li>
+          <li class="focus__item">
+            <span class="focus__num">04</span>
+            <div>
+              <h3 class="focus__title">Scientific computing</h3>
+              <p class="focus__desc">Reproducible Python and Bash workflows for large simulation campaigns on Linux and Slurm/HPC.</p>
             </div>
           </li>
         </ol>
@@ -104,58 +135,107 @@
         <div class="section__body work">
 
           <article class="project">
-            <div class="project__head">
-              <h3 class="project__title">Binding-pocket prediction from protein structure</h3>
-              <span class="project__meta">2024</span>
+            <figure class="project__figure">
+              <img src="assets/projects/pgm.png" alt="β-phosphoglucomutase active site showing Mg2+ and catalytic residues" loading="lazy" decoding="async" />
+              <figcaption>Projected electric fields reveal how Mg²⁺ positioning reshapes the catalytic environment.</figcaption>
+            </figure>
+            <div class="project__content">
+              <p class="project__question">How does Asp10Asn disrupt β-phosphoglucomutase catalysis?</p>
+              <div class="project__head">
+                <h3 class="project__title">Electrostatic Preorganization and Mg²⁺ Positioning</h3>
+                <span class="project__meta">First author · Major revision</span>
+              </div>
+              <ul class="project__facts" aria-label="Project scale">
+                <li><strong>12</strong> simulations</li>
+                <li><strong>~43k</strong> atoms each</li>
+                <li><strong>3.0 μs</strong> total</li>
+              </ul>
+              <p class="project__desc">Projected electric-field and GROMOS cluster analyses revealed Mg²⁺ mispositioning in the mutant and disruption of ground-state electrostatic preorganization.</p>
+              <ul class="tags">
+                <li>AMOEBA</li>
+                <li>Electric fields</li>
+                <li>GROMOS clustering</li>
+                <li>Poltype2</li>
+              </ul>
             </div>
-            <p class="project__desc">Pocket prediction is the first step of structure-based virtual screening: it tells docking where to look, narrowing a large compound library before wet-lab testing. Built a grid-based pocket-detection pipeline with an XGBoost classifier trained on geometric and pharmacophore features from local protein neighborhoods, reaching F1 ≈ 0.92 on held-out data. Scaled inference with cKDTree spatial indexing and exported probability-scored pockets as PDB for visualization.</p>
-            <ul class="tags">
-              <li>XGBoost</li>
-              <li>Feature engineering</li>
-              <li>cKDTree</li>
-              <li>scikit-learn</li>
-            </ul>
           </article>
 
           <article class="project">
-            <div class="project__head">
-              <h3 class="project__title">Electrostatic Preorganization and Mg²⁺ Positioning in β-Phosphoglucomutase</h3>
-              <span class="project__meta">2026 · submitted</span>
+            <figure class="project__figure">
+              <img src="assets/projects/dszb.png" alt="Molecular structure of glycosylated DszB with highlighted dynamic regions" loading="lazy" decoding="async" />
+              <figcaption>Glycosylation changes loop hydration and flexibility around the DszB active site.</figcaption>
+            </figure>
+            <div class="project__content">
+              <p class="project__question">How can synthetic glycosylation promote enzyme product release?</p>
+              <div class="project__head">
+                <h3 class="project__title">Molecular Mechanism of DszB Glycoengineering</h3>
+                <span class="project__meta">Published · 2025</span>
+              </div>
+              <ul class="project__facts" aria-label="Project scale">
+                <li><strong>27</strong> simulations</li>
+                <li><strong>&gt;70k</strong> atoms each</li>
+                <li><strong>4.05 μs</strong> total</li>
+              </ul>
+              <p class="project__desc">Serine glycosylation strengthened loop-water interactions, increased loop flexibility, promoted product release, and preserved reactant positioning.</p>
+              <ul class="tags">
+                <li>Polarizable MD</li>
+                <li>Enzyme engineering</li>
+                <li>Tinker9</li>
+                <li>MDAnalysis</li>
+              </ul>
             </div>
-            <p class="project__desc">Mapped the active-site electrostatics of wild-type β-PGM and its Asp10Asn mutant with AMOEBA polarizable MD and projected electric-field analysis. Decomposing the field by residue, ion, and solvent revealed that catalysis is governed less by Asp10 proton transfer than by Mg²⁺ positioning: in the mutant, a mispositioned Mg²⁺ opposes phosphoryl transfer, revising the accepted mechanism. First-author manuscript, submitted 2026.</p>
-            <ul class="tags">
-              <li>Polarizable MD</li>
-              <li>Electrostatic interaction</li>
-              <li>Poltype2</li>
-              <li>Tinker</li>
-            </ul>
           </article>
 
           <article class="project">
-            <div class="project__head">
-              <h3 class="project__title">Electrolyte selection for sodium-ion batteries</h3>
-              <span class="project__meta">2026 · submitted</span>
+            <figure class="project__figure project__figure--contain">
+              <img src="assets/projects/peptide.png" alt="Peptide surrounded by water and glucose molecules in a simulation box" loading="lazy" decoding="async" />
+              <figcaption>A systematic dataset isolates how sequence and glucose concentration affect hydration dynamics.</figcaption>
+            </figure>
+            <div class="project__content">
+              <p class="project__question">How do glucose concentration and sequence order reshape peptide hydration?</p>
+              <div class="project__head">
+                <h3 class="project__title">Systematic Benchmark of Peptide Hydration Dynamics</h3>
+                <span class="project__meta">Manuscript in preparation</span>
+              </div>
+              <ul class="project__facts" aria-label="Project scale">
+                <li><strong>120</strong> systems</li>
+                <li><strong>4</strong> concentrations</li>
+                <li><strong>12–14.4 μs</strong> total</li>
+              </ul>
+              <p class="project__desc">Increasing glucose concentration slowed hydration water, while sequence order altered intramolecular hydrogen bonding, peptide conformation, and surrounding water dynamics.</p>
+              <ul class="tags">
+                <li>AMOEBA</li>
+                <li>VACF / DACF</li>
+                <li>SciPy</li>
+                <li>Hydration dynamics</li>
+              </ul>
             </div>
-            <p class="project__desc">Sodium-ion batteries are a cheaper, more abundant alternative to lithium, and their performance hinges on the electrolyte. Simulated sodium-ion electrolytes in diglyme (NaPF₆, NaOTF) with AMOEBA and CHARMM, quantifying ion transport and solvation structure via RDF and diffusion to rationalize experimental trends and guide electrolyte choice. Manuscript submitted.</p>
-            <ul class="tags">
-              <li>Accurate MD</li>
-              <li>GROMACS</li>
-              <li>RDF · diffusion</li>
-            </ul>
           </article>
 
           <article class="project">
-            <div class="project__head">
-              <h3 class="project__title">Predicting SAXS to probe electrolyte solvation and transport</h3>
-              <span class="project__meta">2026 · ongoing</span>
+            <figure class="project__figure">
+              <img src="assets/projects/electrolyte.png" alt="Molecular dynamics snapshot of sodium-ion electrolyte components" loading="lazy" decoding="async" />
+              <figcaption>Atomistic solvation structure connects electrolyte composition to Na⁺ transport.</figcaption>
+            </figure>
+            <div class="project__content">
+              <p class="project__question">Which diglyme electrolyte formulation enables the fastest Na⁺ transport?</p>
+              <div class="project__head">
+                <h3 class="project__title">Molecular Dynamics of Sodium-Ion Battery Electrolytes</h3>
+                <span class="project__meta">Second author · In preparation</span>
+              </div>
+              <ul class="project__facts" aria-label="Project scale">
+                <li><strong>6</strong> simulations</li>
+                <li><strong>~45k</strong> atoms each</li>
+                <li><strong>600 ns</strong> total</li>
+              </ul>
+              <p class="project__desc">The 0.6 M NaPF₆ formulation produced the fastest Na⁺ diffusion at 1.33 × 10⁻⁶ cm²/s, consistent with spectroscopy and electrochemical measurements.</p>
+              <ul class="tags">
+                <li>AMOEBA / CHARMM</li>
+                <li>GROMACS</li>
+                <li>RDF / diffusion</li>
+                <li>Ion transport</li>
+              </ul>
             </div>
-            <p class="project__desc">An unexpected peak appears in the experimental SAXS of certain electrolyte solutions, and its origin is still unclear. Parametrizing high-accuracy force fields for organic solvents and fluorinated sulfonylimide anions (FSI, TFSI, BETI) with Na⁺ and Cl⁻. MD then predicts the SAXS to reproduce that peak. That links it to the solvation structure and ion transport at the atomistic scale.</p>
-            <ul class="tags">
-              <li>MD</li>
-              <li>SAXS</li>
-              <li>Solvation structure</li>
-              <li>Ion transport</li>
-            </ul>
           </article>
 
         </div>
@@ -166,38 +246,44 @@
         <h2 class="section__label">Skills &amp; tools</h2>
         <div class="section__body skills">
           <div class="skill">
-            <h3 class="skill__label">Machine learning</h3>
-            <ul class="skill__chips">
-              <li>XGBoost</li>
-              <li>SVM</li>
-              <li>scikit-learn</li>
-              <li>Feature engineering</li>
-              <li>Model evaluation</li>
-            </ul>
-          </div>
-          <div class="skill">
-            <h3 class="skill__label">Molecular simulation</h3>
+            <h3 class="skill__label">Simulation &amp; force fields</h3>
             <ul class="skill__chips">
               <li>AMOEBA</li>
               <li>CHARMM</li>
-              <li>Tinker</li>
+              <li>Tinker9</li>
               <li>GROMACS</li>
-              <li>MDAnalysis</li>
+              <li>Poltype2</li>
             </ul>
           </div>
           <div class="skill">
-            <h3 class="skill__label">Programming</h3>
+            <h3 class="skill__label">Scientific computing &amp; HPC</h3>
             <ul class="skill__chips">
               <li>Python</li>
+              <li>NumPy / pandas</li>
+              <li>SciPy / Matplotlib</li>
+              <li>MDAnalysis</li>
               <li>Bash</li>
-              <li>Git</li>
+              <li>Slurm / HPC</li>
             </ul>
           </div>
           <div class="skill">
-            <h3 class="skill__label">Quantum chemistry</h3>
+            <h3 class="skill__label">Trajectory analysis</h3>
+            <ul class="skill__chips">
+              <li>RMSD / RMSF</li>
+              <li>RDF / SASA</li>
+              <li>Hydrogen bonds</li>
+              <li>VACF / DACF</li>
+              <li>Electric fields</li>
+              <li>Cluster analysis</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3 class="skill__label">Quantum &amp; visualization</h3>
             <ul class="skill__chips">
               <li>VASP</li>
               <li>Gaussian</li>
+              <li>VMD</li>
+              <li>PyMOL</li>
             </ul>
           </div>
         </div>
@@ -210,21 +296,21 @@
           <div class="edu">
             <div>
               <h3 class="edu__school">Virginia Tech</h3>
-              <p class="edu__detail">Ph.D. in Chemistry · GPA 3.85 · Advisor: Valerie Welborn</p>
+              <p class="edu__detail">Ph.D. in Chemistry · GPA 3.85 · Advisor: Valerie Welborn · Expected May 2027</p>
             </div>
             <span class="edu__years">2022 — present</span>
           </div>
           <div class="edu">
             <div>
               <h3 class="edu__school">University of Oregon</h3>
-              <p class="edu__detail">M.S. in Chemistry · GPA 3.38</p>
+              <p class="edu__detail">M.S. in Chemistry</p>
             </div>
             <span class="edu__years">2019 — 2020</span>
           </div>
           <div class="edu">
             <div>
               <h3 class="edu__school">China University of Mining &amp; Technology</h3>
-              <p class="edu__detail">B.S. in Applied Chemistry · GPA 3.67</p>
+              <p class="edu__detail">B.S. in Applied Chemistry</p>
             </div>
             <span class="edu__years">2015 — 2019</span>
           </div>
@@ -240,21 +326,21 @@
           <p class="pub__authors">Liang, J., Zheng, Y., &amp; Vaissier Welborn, V. — <em>Protein Science</em>, 2025.</p>
           <a class="pub__link" href="https://doi.org/10.1002/pro.70187" target="_blank" rel="noopener">Read on Protein Science →</a>
 
-          <p class="pub__subhead">Manuscripts in progress</p>
+          <p class="pub__subhead">Research in progress</p>
           <div class="pub__wip">
-            <span class="chip chip--submitted">Submitted</span>
+            <span class="chip chip--submitted">Major revision</span>
             <h4 class="pub__wip-title">Electrostatic Preorganization and Mg²⁺ Positioning in β-Phosphoglucomutase</h4>
-            <p class="pub__wip-authors">Liang, J., Hartman, N., Camp, G., &amp; Vaissier Welborn, V. — manuscript submitted, 2026.</p>
+            <p class="pub__wip-authors">First-author manuscript.</p>
           </div>
           <div class="pub__wip">
-            <span class="chip chip--submitted">Submitted</span>
-            <h4 class="pub__wip-title">Low-Salt Ether Electrolyte Enables Fast-Charging High-Voltage Sodium Batteries through Synergistic Interfacial Kinetic Stabilization</h4>
-            <p class="pub__wip-authors">Xia, D., Liang, J., et&nbsp;al. — manuscript submitted, 2026.</p>
+            <span class="chip chip--submitted">In preparation</span>
+            <h4 class="pub__wip-title">Systematic Benchmark of Peptide Hydration Dynamics</h4>
+            <p class="pub__wip-authors">Manuscript in preparation.</p>
           </div>
           <div class="pub__wip">
-            <span class="chip chip--submitted">Submitted</span>
-            <h4 class="pub__wip-title">Investigation on the Effect of Solvent Interactions on Molecular Weight and Polymerization of Phenolphthalin-Based Poly(arylene ether sulfone) Homopolymers</h4>
-            <p class="pub__wip-authors">Arnett, N., Mason, S., Liang, J., Vaissier Welborn, V., Downes, R., Wadsworth, O., &amp; Addison, B. — manuscript submitted, 2026.</p>
+            <span class="chip chip--submitted">In preparation</span>
+            <h4 class="pub__wip-title">Molecular Dynamics of Sodium-Ion Battery Electrolytes</h4>
+            <p class="pub__wip-authors">Second-author manuscript in preparation.</p>
           </div>
         </div>
       </section>
@@ -267,18 +353,18 @@
       <div class="footer__top">
         <div>
           <p class="footer__headline">Let's talk.</p>
-          <a class="footer__email" href="/cdn-cgi/l/email-protection#e288978c80838d8ea29496cc878697"><span class="__cf_email__" data-cfemail="1278677c70737d7e5264663c777667">[email&#160;protected]</span></a>
+          <a class="footer__email" href="mailto:junbaol@vt.edu">junbaol@vt.edu</a>
         </div>
         <nav class="footer__links" aria-label="Elsewhere">
           <a href="https://scholar.google.com/citations?user=heYls3kAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
           <a href="https://www.linkedin.com/in/junbao-liang-a052772ab" target="_blank" rel="noopener">LinkedIn ↗</a>
           <a href="https://github.com/JunbaoLiang" target="_blank" rel="noopener">GitHub ↗</a>
-          <a href="assets/cv-ml.pdf" target="_blank" rel="noopener">CV · Scientific ML ↓</a>
-          <a href="assets/cv-mm.pdf" target="_blank" rel="noopener">CV · Molecular Modeling ↓</a>
+          <a href="assets/Junbao_Liang_CV_MM2026.pdf" target="_blank" rel="noopener">Download CV ↓</a>
         </nav>
       </div>
-      <p class="footer__copy">© 2025 Junbao Liang · Computational Chemistry, Virginia Tech</p>
+      <p class="footer__copy">© 2026 Junbao Liang · Computational Chemistry, Virginia Tech</p>
     </div>
   </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+  <script src="main.js"></script>
+</body>
 </html>

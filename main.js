@@ -26,7 +26,7 @@
 
   // ---- Reveal on scroll ---------------------------------------------------
   const revealTargets = document.querySelectorAll(
-    ".hero__copy > *, .hero__portrait, .band__lede, .skill, .section-head, .card, .pub, .timeline__item, .contact__card"
+    ".hero__main > *, .hero__portrait, .metrics__item, .banner, .about > *, .focus__item, .project, .skill, .edu, .publications > *"
   );
   revealTargets.forEach((el, i) => {
     el.classList.add("reveal");
